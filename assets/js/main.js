@@ -52,7 +52,7 @@ for (let i = 0; i < team.length; i++) {
     const infoPerson = team[i];
     console.log(infoPerson);
     //creo una variabile e con i backtip aggiungo i miei div con la classe col-2
-    const colEL=`<div class="col-4 card my-3"><h3>${infoPerson.Name}</h3><p>${infoPerson.Role}</p><span>${infoPerson.Image}</span></div>`;
+    const colEL=`<div class="col-4 card my-3 text-center"><img src="./assets/img/${infoPerson.Image}" alt=""><h3>${infoPerson.Name}</h3><p>${infoPerson.Role}</p></div>`;
     //inserisco il tutto con insertadjacenthtml
     rowEl.insertAdjacentHTML('beforeend', colEL)
 
